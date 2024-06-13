@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 20px;
+}
+
+.service {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.service img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.service h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1em;
+  line-height: 1.5;
+}
