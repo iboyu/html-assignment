@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment4</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      height: 100px;
+    }
+    .nested-table {
+      width: 100%;
+      height: 100%;
+      table-layout: fixed;
+    }
+    .nested-table td {
+      height: 50%;
+    }
+    button {
+      width: 100%;
+      height: 100%;
+      color: blue;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <td colspan="4">
+          <h2 style="text-align: center">Antra LIFE</h2>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button style="font-size: 25px">Google</button>
+        </td>
+        <td colspan="2" style="text-align: right; vertical-align: top">
+          <button style="font-size: 25px">Github</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button style="font-size: 25px">Facebook</button>
+        </td>
+        <td>
+          <button style="font-size: 25px">GMail</button>
+        </td>
+        <td>
+          <button style="font-size: 25px">YouTube</button>
+        </td>
+        <td>
+          <button style="font-size: 25px">2048</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button style="font-size: 25px">Food</button>
+        </td>
+        <td colspan="2">
+          <button style="font-size: 25px">Game</button>
+        </td>
+        <td>
+          <table class="nested-table">
+            <tr>
+              <td style="font-size: x-small">
+                <button style="font-size: 15px">Social Life</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button style="font-size: 15px">Sleep</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button style="text-align: right; font-weight: bold; font-size: 30px">
+            Beer >>>
+          </button>
+        </td>
+        <td>
+          <button style="font-size: 25px">WC</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
