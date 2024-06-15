@@ -6,27 +6,6 @@
     <title>CSS assignment1</title>
 
     <style>
-      /* .navbar-container ul {
-      list-style-type: none;
-      background-color: darkblue;
-      padding: 0px;
-      margin: 0px;
-      overflow: hidden;
-    }
-    .navbar-container a {
-      color: white;
-      text-decoration: none;
-      padding: 15px;
-      display: block;
-      text-align: center;
-    }
-    .navbar-container a:hover {
-      background-color: blueviolet;
-    }
-
-    .navbar-container li {
-      float: left;
-    } */
       body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -36,12 +15,15 @@
         justify-content: space-between;
         align-items: center;
         background-color: #0a055a;
+        padding: 10px 20px;
       }
       .navbar-menu {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
+        align-items: center;
       }
+
       .navbar-menu li {
         margin: 0 10px;
         position: relative;
@@ -51,7 +33,7 @@
         color: white;
         margin-left: 2px;
         display: block;
-        padding: 4px 20px;
+        padding: 10px 20px;
       }
       .navbar-menu a:hover {
         background-color: blue;
@@ -74,11 +56,18 @@
       .contactInfo:hover .contactDetail {
         display: block;
       }
+      .navbar-menu img {
+        max-width: 100px;
+        height: auto;
+      }
     </style>
   </head>
   <body>
     <div class="navbar-container">
       <ul class="navbar-menu">
+        <li>
+          <img src="antra_logo.png" alt="Antra logo" />
+        </li>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
