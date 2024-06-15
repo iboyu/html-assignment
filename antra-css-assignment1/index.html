@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS assignment1</title>
+
+    <style>
+      /* .navbar-container ul {
+      list-style-type: none;
+      background-color: darkblue;
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+    }
+    .navbar-container a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      text-align: center;
+    }
+    .navbar-container a:hover {
+      background-color: blueviolet;
+    }
+
+    .navbar-container li {
+      float: left;
+    } */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0a055a;
+      }
+      .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+      .navbar-menu li {
+        margin: 0 10px;
+        position: relative;
+      }
+      .navbar-menu a {
+        text-decoration: none;
+        color: white;
+        margin-left: 2px;
+        display: block;
+        padding: 4px 20px;
+      }
+      .navbar-menu a:hover {
+        background-color: blue;
+      }
+      .navbar-search {
+        margin-right: 5px;
+      }
+      .contactDetail {
+        display: none;
+        position: absolute;
+        background-color: #0a055a;
+        padding: 10px;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+      }
+      .contactDetail {
+        display: none;
+      }
+      .contactInfo:hover .contactDetail {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li class="contactInfo">
+          <a href="#">Contact</a>
+          <ul class="contactDetail">
+            <li><a href="#">Email Address</a></li>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Location Details</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-search">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </div>
+    </div>
+  </body>
+</html>
